@@ -47,3 +47,93 @@ nav li {
   width: 100%;
   white-space: nowrap;
 }
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #6c8fe0;
+  padding: .5em .75em;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #6c8fe0;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    width: 50%;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  nav {
+    flex-wrap: nowrap;
+  }
+
+  nav li {
+    width: 25%;
+  }
+
+  nav ul {
+    justify-content: space-around;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  header h1 {
+    width: 50%;
+    display: flex;
+    padding: 0 .75rem;
+  }
+
+  nav {
+    width: 50%;
+    margin: .9rem;
+    padding: .3em 0 .5em;
+  }
+
+  nav li {
+    align-items: flex-end;
+    padding-right: 0;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+}
